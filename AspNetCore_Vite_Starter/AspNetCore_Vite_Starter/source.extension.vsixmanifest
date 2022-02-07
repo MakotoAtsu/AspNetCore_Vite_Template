@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="AspNetCore_Vite_Starter.9384b3eb-15a8-4c91-b13e-b62c6eac20cf" Version="1.0" Language="en-US" Publisher="MakotoAtsu" />
+        <Identity Id="AspNetCore_Vite_Starter.9384b3eb-15a8-4c91-b13e-b62c6eac20cf" Version="1.1" Language="en-US" Publisher="MakotoAtsu" />
         <DisplayName>AspNetCore_Vite_Starter</DisplayName>
         <Description xml:space="preserve">Integrating Vite Project In ASP.NET Core</Description>
+        <Icon>Vite_Logo.png</Icon>
         <Tags>Vite,SPA,Vue.js,React.js,Asp.Net, Core, Single Page, WEB</Tags>
     </Metadata>
 
