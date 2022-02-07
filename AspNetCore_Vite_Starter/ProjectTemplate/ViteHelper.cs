@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace ProjectTemplate
 {
-    public static class VueHelper
+    public static class ViteHelper
     {
         // done message of 'npm run serve' command.
         private static string DoneMessage { get; } = "Dev server running at:";
@@ -63,6 +63,7 @@ namespace ProjectTemplate
                 var serverOptionFile = Path.Combine(spaFolder, $"serverOption{new FileInfo(viteConfigPath).Extension}");
 
 
+                // Check dev pfx exist
                 if (!File.Exists(serverOptionFile) || !File.Exists(tempPfx))
                 {
                     var pfxPassword = Guid.NewGuid().ToString("N");
@@ -92,7 +93,27 @@ namespace ProjectTemplate
                     InjectionViteConfig(viteConfigPath, serverOptionFile);
                 }
 
-                // launch vue.js development server
+                // Check Node_Module exists
+                if (!Directory.Exists(Path.Combine(spa.Options.SourcePath, "node_modules")))
+                {
+                    logger.LogWarning($"node_modules not found , run npm install...");
+                    // Install node modules
+                    var ps = Process.Start(new ProcessStartInfo()
+                    {
+                        FileName = isWindows ? "cmd" : "npm",
+                        Arguments = $"{(isWindows ? "/c npm " : "")}install",
+                        WorkingDirectory = spa.Options.SourcePath,
+                        RedirectStandardError = true,
+                        RedirectStandardInput = true,
+                        RedirectStandardOutput = true,
+                        UseShellExecute = false,
+                    });
+
+                    ps.WaitForExit();
+                    logger.LogWarning($"npm install done.");
+                }
+
+                // launch Vite development server
                 var runningPort = port.HasValue ? $" -- --port {port.Value}" : string.Empty;
                 var processInfo = new ProcessStartInfo
                 {
