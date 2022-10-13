@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore_Vite_Starter", "AspNetCore_Vite_Starter\AspNetCore_Vite_Starter.csproj", "{E1015E75-E0D5-4FF2-A6DC-3ED97157B980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectTemplate", "ProjectTemplate\ProjectTemplate.csproj", "{D818C898-2A18-49D6-82D0-05F6A9D4BDB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectTemplate", "ProjectTemplate\ProjectTemplate.csproj", "{D818C898-2A18-49D6-82D0-05F6A9D4BDB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net6_Controller_Vue_TS", "Net6_Controller_Vue_TS\Net6_Controller_Vue_TS.csproj", "{B12B186F-B7F2-49A4-A898-03FAB78642E6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,14 @@ Global
 		{D818C898-2A18-49D6-82D0-05F6A9D4BDB7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D818C898-2A18-49D6-82D0-05F6A9D4BDB7}.Release|x86.ActiveCfg = Release|Any CPU
 		{D818C898-2A18-49D6-82D0-05F6A9D4BDB7}.Release|x86.Build.0 = Release|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Debug|x86.Build.0 = Debug|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Release|x86.ActiveCfg = Release|Any CPU
+		{B12B186F-B7F2-49A4-A898-03FAB78642E6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
