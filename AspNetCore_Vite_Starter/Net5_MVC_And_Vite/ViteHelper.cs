@@ -11,7 +11,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjectTemplate
+namespace Net5_MVC_And_Vite
 {
     public static class ViteHelper
     {
@@ -251,11 +251,11 @@ namespace ProjectTemplate
             {
                 try
                 {
-                    string? line;
+                    string line;
                     while ((line = process?.StandardOutput.ReadLine()?.Trim()) != null)
                     {
                         // Wait for done message
-                        if (!String.IsNullOrEmpty(line))
+                        if (!string.IsNullOrEmpty(line))
                         {
                             ViteLogger?.LogInformation(line);
                             if (!tcs.Task.IsCompleted && line.Contains("VITE", StringComparison.OrdinalIgnoreCase))
@@ -278,7 +278,7 @@ namespace ProjectTemplate
             {
                 try
                 {
-                    string? line;
+                    string line;
                     while ((line = process?.StandardError.ReadLine()?.Trim()) != null)
                     {
                         ViteLogger?.LogError(line);

@@ -1,6 +1,6 @@
 using System;
 
-namespace ProjectTemplate
+namespace Net5_MVC_And_Vite
 {
     public class WeatherForecast
     {

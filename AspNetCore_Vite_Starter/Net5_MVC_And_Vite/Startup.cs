@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace ProjectTemplate
+namespace Net5_MVC_And_Vite
 {
     public class Startup
     {

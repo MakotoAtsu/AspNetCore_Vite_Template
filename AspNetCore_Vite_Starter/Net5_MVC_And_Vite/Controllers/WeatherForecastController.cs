@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Net5_MVC_And_Vite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProjectTemplate.Controllers
+namespace Net5_MVC_And_Vite.Controllers
 {
     [ApiController]
     [Route("[controller]")]

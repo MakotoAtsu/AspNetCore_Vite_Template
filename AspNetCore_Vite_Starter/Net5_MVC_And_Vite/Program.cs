@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ProjectTemplate
+namespace Net5_MVC_And_Vite
 {
     public class Program
     {
