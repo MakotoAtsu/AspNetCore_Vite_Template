@@ -8,8 +8,8 @@ namespace Net6_Controller_And_VIte.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -29,5 +29,8 @@ namespace Net6_Controller_And_VIte.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("Message")]
+        public string GetBackendMessage() => "This is message from backend";
     }
 }

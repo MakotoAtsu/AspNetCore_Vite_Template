@@ -36,5 +36,8 @@ namespace Net5_MVC_And_Vite.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("Message")]
+        public string GetBackendMessage() => "This is message from backend";
     }
 }

@@ -1,10 +1,11 @@
 using Net6_Controller_And_VIte;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -14,6 +15,7 @@ builder.Services.AddSpaStaticFiles(configuration =>
 {
     configuration.RootPath = "ClientApp/dist";
 });
+
 
 var app = builder.Build();
 
@@ -29,20 +31,21 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSpaStaticFiles();
 
+
+app.UseRouting();
 app.UseAuthorization();
-
-app.MapControllers();
-
+app.UseEndpoints(endpoints => endpoints.MapControllers());
 
 app.UseSpa(spa =>
 {
-    spa.Options.SourcePath = "ClientApp";
-
     if (app.Environment.IsDevelopment())
-    {
-        spa.UseViteDevelopmentServer();
-    }
+        spa.UseViteDevelopmentServer(sourcePath: "ClientApp");
 });
 
+app.Use(async (context, next) =>
+{
+    Debug.WriteLine("Not in SPA");
+    await next.Invoke();
+});
 
 app.Run();
