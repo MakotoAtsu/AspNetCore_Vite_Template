@@ -42,10 +42,4 @@ app.UseSpa(spa =>
         spa.UseViteDevelopmentServer(sourcePath: "ClientApp");
 });
 
-app.Use(async (context, next) =>
-{
-    Debug.WriteLine("Not in SPA");
-    await next.Invoke();
-});
-
 app.Run();
