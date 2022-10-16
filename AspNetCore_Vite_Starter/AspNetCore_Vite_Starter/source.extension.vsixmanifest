@@ -1,53 +1,53 @@
 ﻿<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-    <Metadata>
-        <Identity Id="AspNetCore_Vite_Starter.9384b3eb-15a8-4c91-b13e-b62c6eac20cf" Version="2.0" Language="en-US" Publisher="MakotoAtsu" />
-        <DisplayName>AspNetCore_Vite_Starter</DisplayName>
-        <Description xml:space="preserve">Integrating Vite Project In ASP.NET Core</Description>
-        <Icon>Vite_Logo.png</Icon>
-        <Tags>Vite , SPA , Vue , React , TypeScript , Asp.Net Core, Single Page, WEB</Tags>
-        <Preview>true</Preview>
-    </Metadata>
+	<Metadata>
+		<Identity Id="AspNetCore_Vite_Starter.9384b3eb-15a8-4c91-b13e-b62c6eac20cf" Version="2.1" Language="en-US" Publisher="MakotoAtsu" />
+		<DisplayName>AspNetCore_Vite_Starter</DisplayName>
+		<Description xml:space="preserve">Integrating Vite Project In ASP.NET Core</Description>
+		<MoreInfo>https://github.com/MakotoAtsu/AspNetCore_Vite_Template</MoreInfo>
+		<Icon>Vite_Logo.png</Icon>
+		<Tags>Vite , SPA , Vue , React , TypeScript , Asp.Net Core, Single Page, WEB</Tags>
+	</Metadata>
 
-    <Installation>
-        <!-- VS2019 -->
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0,17.0)">
-            <ProductArchitecture>x86</ProductArchitecture>
-        </InstallationTarget>
+	<Installation>
+		<!-- VS2019 -->
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)">
+			<ProductArchitecture>x86</ProductArchitecture>
+		</InstallationTarget>
+		<InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[16.0,17.0)">
+			<ProductArchitecture>x86</ProductArchitecture>
+		</InstallationTarget>
+		<InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[16.0,17.0)">
+			<ProductArchitecture>x86</ProductArchitecture>
+		</InstallationTarget>
 
-        <!-- VS2022 -->
-        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0]">
-            <ProductArchitecture>amd64</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0]">
-            <ProductArchitecture>amd64</ProductArchitecture>
-        </InstallationTarget>
-        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,18.0]">
-            <ProductArchitecture>amd64</ProductArchitecture>
-        </InstallationTarget>
-    </Installation>
+		<!-- VS2022 -->
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0]">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+		<InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,18.0]">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+		<InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,18.0]">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+	</Installation>
 
-    <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    </Dependencies>
-    <Assets>
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactJS_And_Net6_Controllers.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactJS_And_Net6_MinimalAPI.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactTS_And_Net6_Controllers.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactTS_And_Net6_MinimalAPI.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueJS_And_Net6_Controllers.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueJS_And_Net6_MinimalAPI.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueTS_And_Net5_MVC.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueTS_And_Net6_Controllers.zip" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueTS_And_Net6_MinimalAPI.zip" />
-    </Assets>
-    <Prerequisites>
-        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,18.0)" DisplayName="Visual Studio core editor" />
-    </Prerequisites>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactJS_And_Net6_Controllers.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactJS_And_Net6_MinimalAPI.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactTS_And_Net6_Controllers.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_ReactTS_And_Net6_MinimalAPI.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueJS_And_Net6_Controllers.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueJS_And_Net6_MinimalAPI.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueTS_And_Net5_MVC.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueTS_And_Net6_Controllers.zip" />
+		<Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Vite_VueTS_And_Net6_MinimalAPI.zip" />
+	</Assets>
+	<Prerequisites>
+		<Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,18.0)" DisplayName="Visual Studio core editor" />
+	</Prerequisites>
 </PackageManifest>
