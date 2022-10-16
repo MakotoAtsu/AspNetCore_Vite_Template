@@ -4,6 +4,23 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [backednResult , setResult] = useState('Please click button...')
+
+  
+  const fetchWeatherForecast = () => {
+    fetch('/WeatherForecast')
+      .then(resp => resp.json())
+      .then(json => {
+        setResult(JSON.stringify(json))
+        console.log(json)
+      })
+  }
+
+  const fetchMessage = () => {
+    fetch('/WeatherForecast/Message')
+      .then(resp => resp.text())
+      .then(msg => setResult(msg))
+  }
 
   return (
     <div className="App">
@@ -17,9 +34,20 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        <div>
+          <button onClick={() => fetchMessage()}>
+            Fetch Message from backend
+          </button>
+          <button onClick={() => setCount((count) => count + 1)}>
+            count is {count}
+          </button>
+          <button onClick={() => fetchWeatherForecast()}>
+            Fetch Weather Forecast from backend
+          </button>
+        </div>
+        <code>
+          {backednResult}
+        </code>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
